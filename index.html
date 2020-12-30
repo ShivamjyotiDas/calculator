@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+   <html>
+      <head>
+         <link rel="stylesheet" type="text/css" href="calculator.css">
+         
+         <title>Calculator</title>
+      </head>
+         <body>
+         <form name="calx">
+            <div class="Calxdiv">
+            <input type="text" name="txt1" style="text-align: right;width: 400px;"><br>
+            <input type="button" name="btn9" value="9" onclick="display(btn9.value)">
+            <input type="button" name="btn8" value="8" onclick="display(btn8.value)">
+            <input type="button" name="btn7" value="7" onclick="display(btn7.value)">
+            <input type="button" name="btn6" value="6" onclick="display(btn6.value)">
+            <input type="button" name="btn5" value="5" onclick="display(btn5.value)"><br>
+            <input type="button" name="btn4" value="4" onclick="display(btn4.value)">
+            <input type="button" name="btn3" value="3" onclick="display(btn3.value)">
+            <input type="button" name="btn2" value="2" onclick="display(btn2.value)">
+            <input type="button" name="btn1" value="1" onclick="display(btn1.value)">
+            <input type="button" name="btn0" value="0" onclick="display(btn0.value)"><br>
+            <input type="button" name="addsum" value="+" onclick="display(addsum.value)">
+            <input type="button" name="subsum" value="-" onclick="display(subsum.value)">
+            <input type="button" name="dividebtn" value="/" onclick="display(dividebtn.value)">
+            <input type="button" name="multiplybtn" value="*" onclick="display(multiplybtn.value)">
+            <input type="button" name="equalResult" value="=" onclick="txt1.value=eval(txt1.value)"><br>
+            <input type="button" name="percent" value="%" onclick="display(percent.value)">s
+            <input type="button" name="btndot" value="." onclick="display(btndot.value)">
+            <input type="button" name="clearbtn" value="Clear" onclick="txt1.value=' '">
+         </div>
+         </form>
+         <script type="text/javascript">
+            function display(n1){
+               calx.txt1.value=calx.txt1.value+n1;
+            }
+         </script>
+         <style type="text/css">
+            body{
+               background-color: black;
+               }
+            .Calxdiv{
+               margin-top: 250px;
+               text-align: center;
+               border-top: 5px solid white;
+               border-top-right-radius: 4000px;
+               border-top-left-radius: 4000px;
+               border-bottom: 5px solid white;
+               border-bottom-right-radius: 4000px;
+               border-bottom-left-radius: 4000px;
+               border-left: 5px solid white;
+            }
+
+         </style>
+</body>
+</html>
